@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Text File</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CONTAINER/WRAPPER -->
+    <div class="container">
+        <!-- INPUT TEXT AREA -->
+        <textarea class="textArea" placeholder="Enter yout text"></textarea>
+        <!-- INPUT FILE NAME -->
+        <div class="options-cont">
+            <div class="file-name">
+                <label for="file-name">File name</label>
+                <input id="file-name" type="text" placeholder="Enter file name">
+            </div>
+            <!-- FILE FORMAT/SAVE AS -->
+            <div class="save-as">
+                <label for="saveAs">Save as</label>
+                <select id="saveAs">
+                    <option value="text/plain">Text File (.txt)</option>
+                    <option value="text/javascript">JS File (.js)</option>
+                    <option value="text/html">HTML File (.html)</option>
+                    <option value="image/svg+xml">SVG File (.svg)</option>
+                    <option value="application/msword">Doc File (.doc)</option>
+                </select>
+            </div>
+        </div>
+        <!-- SAVE BUTTON -->
+        <div class="save-btn">
+            <button>Save As Text File</button>
+        </div>
+       
+    </div>
+
+
+
+    <!------ JAVASCRIPT SOURCE -------->
+    <script src="script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 3px;
+    font-size: 12px;
+}
+body{
+    background: rgb(46, 50, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+/* -----CONTAINER----- */
+.container{
+    width: 360px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+/* -----CONTAINER ELEMENTS----- */
+.container :where(textarea, input, select, button){
+    width: 100%;
+    border: none;
+    padding: 5px 6px ;
+}
+
+/* ----- TEXT AREA ----- */
+.textArea{
+    resize: none;
+    height: 50vh;
+    border: 1px solid rgb(162, 157, 157);
+
+}
+
+/* -----OPTIONS CONTAINER----- */
+.options-cont{
+    display: flex;
+    margin-top: 5px;
+}
+
+.options-cont :where(input, select){
+    border: 1px solid grey;
+    width: 97%;
+    margin-top: 5px;
+
+}
+
+.options-cont :where(.file-name, .save-as){
+    width: 50%;
+}
+
+.options-cont select{ font-size: 10px;}
+
+/* -------- SAVE BUTTON -------- */
+.save-btn button{
+    background-color: rgb(83, 196, 237);
+    margin-top: 10px;
+    min-height: 37px;
+    color: rgb(255, 255, 255);
+}
+
+.save-btn button:hover{
+    background-color: rgb(25, 139, 181);
+    transform: scale(1.03);
+
+}
