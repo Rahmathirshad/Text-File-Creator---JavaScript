@@ -16,7 +16,7 @@ body{
 }
 /* -----CONTAINER----- */
 .container{
-    width: 360px;
+    width: 860px;
     background: rgb(255, 255, 255);
     padding: 10px;
 }
@@ -31,7 +31,7 @@ body{
 /* ----- TEXT AREA ----- */
 .textArea{
     resize: none;
-    height: 50vh;
+    height: 70vh;
     border: 1px solid rgb(162, 157, 157);
 
 }
@@ -61,10 +61,23 @@ body{
     margin-top: 10px;
     min-height: 37px;
     color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 .save-btn button:hover{
     background-color: rgb(25, 139, 181);
     transform: scale(1.03);
+    
 
+}
+
+/* Media Queries */
+
+@media (max-width: 900px) {
+    .container{
+        width: 360px;
+    }
+    .textArea{
+        height: 50vh;
+    }
 }
